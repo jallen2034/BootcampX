@@ -5,6 +5,6 @@ Select only the total amount of time as a single column.
 You can write as many JOIN statements as you need in a single query. Expected Result: */
 SELECT sum(duration) AS total_duration
 FROM students 
-  JOIN assignment_submissions ON students.id = assignment_submissions.student_id
-  JOIN cohorts ON cohorts.id = students.cohort_id
-  WHERE cohorts.name = 'FEB12';
+JOIN assignment_submissions ON students.id = assignment_submissions.student_id
+JOIN cohorts ON cohorts.id = students.cohort_id
+WHERE cohorts.name = 'FEB12';
